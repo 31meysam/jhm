@@ -362,7 +362,7 @@ elseif($textmessage == "پیام همگانی" && $from_id == $admin){
       ],'resize_keyboard'=>true])
   ]);
 }
-elseif($step == "bc" && $from_id == $admin){
+elseif($step == "bc" ){
     file_put_contents("data/$from_id/step.txt","none");
  makereq('sendmessage',[
     'chat_id'=>$chat_id,
